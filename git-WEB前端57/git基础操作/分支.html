@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    分支:
+    # git branch // 查看
+    git branch 注册功能 // 创建
+    git checkout 注册功能 // 切换
+
+    # git checkout -b 注册功能 // 创建并切换分支
+
+    然后就可以在 “注册功能” 分支上进行开发，开发往后进行 git add .，git commit -m '提交信息'
+
+    git checkout master // 切换到 master 分支
+    git merge 注册功能 // 合并注册功能的代码
+    - 创建分支的时候，创建的分支的代码和当前所处的分支的代码一样
+    - 如果想把 a 分支的代码合并到 b 分支上面，要先保证处于 b 分支，`git merge a`
+</body>
+
+</html>

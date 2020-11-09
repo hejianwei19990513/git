@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    - 初始化仓库，`git init`
+    - 查看文件的状态，`git status / git status -s`
+    - 添加到暂存区，`git add . / git add index.html`
+    - 提交到仓库，`git commit -m '新增了 index.html 文件'`
+    - git checkout . /git checkout -- index.html 恢复到修改前的版本（慎用不可逆）,不小心删除了也可以通过这个恢复
+    - git reset HEAD . /git reset HEAD index.html 撤销暂存区的提交
+    - git commit -a -m ' 撤销暂存区直接提交到仓库
+    - `git rm -rf index.html`，删除本地和仓库的 index.html 文件，了解即可
+    - `git log`，查看 commit 历史，`git reflog`
+    - `git reset --hard CommitId（提交 ID）`，掌握！
+    - `.gitignore 里面可以写需要被忽略的文件`
+    # * 就代表任意字符，能匹配例如 a.a，bb.a，xxx.a 的文件，都能忽略
+    *.a
+    # 忽略 node_modules 这个文件夹
+    node_modules/
+</body>
+
+</html>
